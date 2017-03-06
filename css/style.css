@@ -125,17 +125,31 @@ main p {
 main img {
     margin-top:-142.5px;
 }
-@media (max-width:480px) {
+
+@media (max-width:350px) {
     main h1 {
-        font-size:28px !important;
-        line-height: 40px;
+        margin-right:-20px !important;
+        margin-left:-20px !important;
+    }
+}       
+@media (max-width:473px) {
+    main h1 {
+        font-size: 28px !important;
     }
     main p {
         font-size:16px !important;
     }
 }
+@media (min-width:474px) {
+    main h1 {
+        font-size:auto;
+    }
+    main p { 
+        font-size:auto;
+    }
+}
 
-/* ABOUT */
+/* ABOUT & CONTACT */
 /* Banner */
 div#about {
     margin:-12px 50px 0 50px;
@@ -162,7 +176,14 @@ story div h2 {
 story div p {
     margin:20px 100px;
 }
-
+/* Resume Box */
+div.resume {
+    background-color:#F2F2F2;
+}
+div.resume img {
+    margin:50px 0;
+}
+/* Media Queries */
 @media (max-width:375px) {
     story div p {
         font-size:15px !important;
@@ -196,7 +217,7 @@ story div p {
         text-align: center !important;
     }
 }
-@media (min-width:768px), max-width:768px) {
+@media (min-width:768px) {
     div#about {
         margin-right:auto !important;
         margin-left:auto !important;
@@ -222,7 +243,7 @@ story div p {
         margin-left:20px !important;
     }
     story h2 {
-        margin-top:30px;
+        margin-top:30px !important;
     }
     story div p {
         font-size: 18px !important;
@@ -234,13 +255,7 @@ story div p {
         margin:-50px 0 80px 20px;
     }
 }
-/* Resume Box */
-div.resume {
-    background-color:#F2F2F2;
-}
-div.resume img {
-    margin:50px 0;
-}
+
 
 
 /* CASE STUDY BANNERS */
@@ -301,16 +316,27 @@ header banner ul > li > a {
     font-size: 16px;
     color:#333333 !important;
 }
-@media (max-width: 480px) { /* for vertical phones */
+/* Media Queries */
+@media (max-width:360px) {
+    div#backyard, div#shenphen, div#hive, div#photofile {  /* add other studies */
+        margin-right:0;
+        margin-left:0;
+    }
+    header banner ul > li {
+        margin-right:5px !important;
+        margin-left:5px !important;
+    }
+    h1#shenphen {
+        font-size:
+    }
+}
+@media (max-width: 480px) {
     header nav ul {
         padding-top: 0;
     }
     header nav ul > li {
         display:block;
         text-align:right;
-    }
-    header nav ul > li > a {
-      
     }
     header banner ul > li {
         margin-right:10px;
@@ -330,19 +356,34 @@ header banner ul > li > a {
         margin-left:20px;
         line-height: 50px
     }
+    section {
+        margin-right:20px !important;
+        margin-left:20px !important;
+    }
+    p.foot {
+        margin-right:30px !important;
+        margin-left:30px !important;
+    }
+    img#mapofplay {
+        width:200px !important;   
+    }
 }
-@media (max-width: 768px) { /* for horizontal phones */
+@media (max-width: 768px) {
     header nav ul {
         margin-top:30px;
     }
     header nav ul > li {
         display:block;
         text-align:right;
+        margin:20px 9px 10px 9px !important;
     }
-    div#shenphen h1 {
-        margin-top:-20px;
+    banner ul > li > a {
+        font-size: 12px !important;
     }
 }
+
+
+
 
 /* CASE STUDIES: STICKY MENU */
 .affix {
@@ -406,6 +447,16 @@ section div.col-lg-12 img {
 section div.col-md-6 img {
     margin: 0 10px;
 }
+/* Media Queries */
+@media (max-width: 375px) {
+    section div.preview {
+        margin-right:20px !important;
+        margin-left:20px !important;
+    }
+    div.preview img {
+        width:240px !important;
+    }
+}
 @media (max-width: 768px) { 
     .mobile-center {
         display:block !important;
@@ -418,11 +469,7 @@ section div.col-md-6 img {
         margin-bottom: 30px;
     }
 }
-@media (max-width:420px) {
-    div.preview img {
-        width:270px !important;
-    }
-}
+
 
 /* FOOTER */
 footer div.contact {
