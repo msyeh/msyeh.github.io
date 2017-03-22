@@ -20,7 +20,7 @@ h2 {
 }
 h2.about {
     font-weight:300;
-    padding:30px 100px 35px 100px;
+    padding:30px 150px 35px 150px;
 }
 h2.resume {
     color:gray;
@@ -166,6 +166,10 @@ div#about p {
     font-size:10px !important;
     color:dimgrey;
 }
+div.about h2 {
+    margin-right:-40px;
+    margin-left:-40px;
+}
 story div {
     margin-top:-10px;
     margin-bottom:10px;
@@ -174,7 +178,7 @@ story div h2 {
     color:#EFD82A;
 }
 story div p {
-    margin:20px 100px;
+    margin:20px 150px;
 }
 /* Resume Box */
 div.resume {
@@ -199,10 +203,11 @@ div.resume img {
         margin: -12px auto;
     }
     div.about {
-        margin:-60px -60px -60px -60px !important;
+        margin:-60px -90px -60px -90px !important;
     }
     h2.about {
         font-size:18px !important;
+        
     }
     story div p {
         margin:20px 40px;
@@ -225,11 +230,16 @@ div.resume img {
     div.about {
         margin-top:-100px !important;
     }
+    
     div#about p {
         margin-left:80px !important;
     }
     story div h2 {
         margin-top:50px !important;
+    }
+    story div p {
+        margin-right:50px !important;
+        margin-left:50px !important;
     }
 }
 @media (min-width:769px) {
@@ -248,8 +258,17 @@ div.resume img {
     story div p {
         font-size: 18px !important;
         line-height: 30px;
+        margin-right:100px !important;
+        margin-left:100px !important;
     }
 }
+@media (min-width:1025px) {
+    story div p {
+        margin-right:150px !important;
+        margin-left:150px !important;
+    }
+}
+
 @media (min-width:1200px) {
     div#about p {
         margin:-50px 0 80px 20px;
@@ -356,7 +375,7 @@ header banner ul > li > a {
         margin-left:20px;
         line-height: 50px
     }
-    section {
+    section {           
         margin-right:20px !important;
         margin-left:20px !important;
     }
@@ -394,32 +413,63 @@ header banner ul > li > a {
     padding-top:100px;
     margin-top:-100px;
 }
+
+/* CASE STUDIES: FULL PROJECTS ONLY */
 @media (max-width: 480px) {
     #overview, #research, #branding, #execution, #learnings, #coding {
         padding-top:150px;
         margin-top:-150px;
     }
+    section div#next-project {
+        margin:0 -20px -10px -20px !important;
+    }  
+}
+@media (min-width: 481px) {
+    #overview, #research, #branding, #execution, #learnings, #coding {
+        margin-left:50px;
+        margin-right:50px;
+    }
+    p.foot {
+        margin-right:100px !important;
+        margin-left:100px !important;
+    }
+}
+@media (min-width: 769px) {
+    #overview, #research, #branding, #execution, #learnings, #coding {
+        margin-left:100px;
+        margin-right:100px;
+    }
+    p.foot {
+        margin-right:50px !important;
+        margin-left:50px !important;
+    }
+}
+@media (min-width: 1025px) {
+    #overview, #research, #branding, #execution, #learnings, #coding {
+        margin-left:150px;
+        margin-right:150px;
+    }
 }
 
 /* CASE STUDIES: PREVIEWS & FULL PROJECT */
 section {
-    margin:20px 50px 5px 50px;
+    margin:20px 150px 5px 150px;
 }
 section div { /* for full case studies */
     margin-bottom:10px;
 }
 section div.preview {
-    margin:30px 50px 30px 50px;
+    margin:30px 20px 30px 20px;
 }
 section div#shaded { /* backyard solution */
     background-color:#DADADA;
     height:550px;
     width:auto;
-    margin:0 -50px 0 -50px !important;
+    margin:0 -150px 0 -150px !important;
 }
 section div#shaded p {
-    margin-right:50px !important;
-    margin-left:50px !important;
+    margin-right:150px !important;
+    margin-left:150px !important;
 }
 section div hr {
     display:block;
@@ -431,15 +481,15 @@ section div hr {
 }
 section div#slightly-shaded {
     background-color:#F4F4F4;
-    margin:0 -50px 0 -50px !important;
+    margin:0 -150px 0 -150px !important;
 }
 section div#next-project {
     background-color:#F4F4F4;
-    margin:0 -50px -10px -50px !important;
+    margin:0 -150px -10px -150px;
 }
 section div#slightly-shaded p {
-    margin-right:50px !important;
-    margin-left:50px !important;
+    margin-right:150px !important;
+    margin-left:150px !important;
 }
 section div.col-lg-12 img {
     margin: 0 10px;
